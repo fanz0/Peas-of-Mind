@@ -1,0 +1,23 @@
+# Welcome to Peas of Mind
+## Your hub for vegetarian recipes
+
+If you're passionate about healthy cooking and want to explore delicious meat-free options, you're in the right place!
+"Peas of Mind" is our website dedicated to vegetarian recipes, made to satisfy every type of taste.
+
+## What do you find on "Peas of Mind"?
+
+- Varied and tasty recipes: from the first couses to the desserts. Whether you're a novice or an experienced cook, you'll find something special.
+
+- Fresh and healty ingredients: each recipe contain a detailed list of ingredients.
+
+- Clear nutritional values: find out the carbohydrates, the proteins, the fats and the calories of each recipe.
+
+- Step-by-step instructions: even beginner will be able to create delicious dishes.
+
+## How the site works?
+
+- The home page presents a small introduction and a button "Inizia", that let you run a long list of recipes.
+After that, you can search whatever you want through a search bar : allow your creativity to get all enough space!
+
+- Click to a specific recipe, bring you to the details page.
+There's a button "Scopri di più" to show ingredients, nutrients and all the steps
