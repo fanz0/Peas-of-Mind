@@ -29,4 +29,6 @@ After that, you can search whatever you want through a search bar : allow your c
 There's a button "Scopri di più" to show ingredients, nutrients and all the steps.
 ![image4](https://github.com/fanz0/Peas-of-Mind/assets/99316714/1e57bf68-f126-41ff-92e5-6ac0e72588cc)
 
+All of this is possible thanks to APIs of spoonacular.com. (https://spoonacular.com/food-api/docs)
+
 # Enjoy your meal! -> https://loquacious-mousse-2914d7.netlify.app/
