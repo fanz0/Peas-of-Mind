@@ -11,6 +11,8 @@ export const SingleRecipe = () => {
     const [active, setActive] = useState(true)
     const [ingredients, setIngredients] = useState([])
     const [nutrients, setNutrients] = useState([])
+    const [saturatedFat, setSaturatedFat] = useState([])
+    const [sugar, setSugar] = useState([])
     const [instructions, setInstructions] = useState()
 
     if (!recipe) {
@@ -25,7 +27,11 @@ export const SingleRecipe = () => {
         
         fetch(`https://api.spoonacular.com/recipes/${recipeID}/nutritionWidget.json?apiKey=${API_KEY}`)
             .then(response => response.json())
-            .then(data => setNutrients(data))
+            .then(data => {
+                setNutrients(data)
+                setSaturatedFat(data.bad.map(value => value.amount)[2])
+                setSugar(data.bad.map(value => value.amount)[4])
+            })
         
             fetch(`https://api.spoonacular.com/recipes/${recipeID}/analyzedInstructions?apiKey=${API_KEY}`)
             .then(response => response.json())
@@ -64,11 +70,14 @@ export const SingleRecipe = () => {
                             </li>
                             <li key={uniqid()}>
                                 <h3 className="font-bold">Grassi</h3>
-                                <p>{nutrients.fat}</p>
+                                <p>{nutrients.fat}</p> <br />
+                                <p>di cui</p>
+                                <p>acidi grassi saturi {saturatedFat}</p>
                             </li>
                             <li key={uniqid()}>
                                 <h3 className="font-bold">Carboidrati</h3>
-                                <p>{nutrients.carbs}</p>
+                                <p>{nutrients.carbs}</p> <br />
+                                <p>di cui zuccheri {sugar}</p>
                             </li>
                             <li key={uniqid()}>
                                 <h3 className="font-bold">Proteine</h3>
