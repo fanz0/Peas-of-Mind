@@ -31,4 +31,4 @@ There's a button "Scopri di più" to show ingredients, nutrients and all the ste
 
 All of this is possible thanks to APIs of spoonacular.com. (https://spoonacular.com/food-api/docs)
 
-# Enjoy your meal! -> https://loquacious-mousse-2914d7.netlify.app/
+# Enjoy your meal! -> https://peasofmind.netlify.app/
